@@ -92,6 +92,24 @@ function drawWallet() {
   walletNumber.innerText = `$${wallet}`
 }
 
+function drawHarrietStats() {
+  const harrietHealthElem = document.getElementById('harrietHealth')
+  const harrietLevelElem = document.getElementById('harrietLevel')
+  harrietHealthElem.innerText = heroes[0].health.toString()
+  harrietLevelElem.innerText = heroes[0].level.toString()
+
+
+}
+
+function drawTimStats() {
+  const timHealthElem = document.getElementById('timHealth')
+  const timLevelElem = document.getElementById('timLevel')
+  timHealthElem.innerText = heroes[1].health.toString()
+  timLevelElem.innerText = heroes[1].level.toString()
+}
+
+
+
 // !SECTION 
 
 
