@@ -15,4 +15,5 @@ body {
 
 .boss {
   font-size: 15rem;
+  user-select: none;
 }
