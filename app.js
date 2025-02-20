@@ -96,8 +96,7 @@ function drawHarrietStats() {
   const harrietHealthElem = document.getElementById('harrietHealth')
   const harrietLevelElem = document.getElementById('harrietLevel')
   harrietHealthElem.innerText = heroes[0].health.toString()
-  harrietLevelElem.innerText = heroes[0].level.toString()
-
+  harrietLevelElem.innerText = boss.level.toString()
 
 }
 
@@ -105,7 +104,14 @@ function drawTimStats() {
   const timHealthElem = document.getElementById('timHealth')
   const timLevelElem = document.getElementById('timLevel')
   timHealthElem.innerText = heroes[1].health.toString()
-  timLevelElem.innerText = heroes[1].level.toString()
+  timLevelElem.innerText = boss.level.toString()
+
+}
+
+function drawAllHeroes() {
+  drawTimStats()
+  drawHarrietStats()
+
 }
 
 
@@ -115,3 +121,4 @@ function drawTimStats() {
 
 // SECTION On Page Load
 setInterval(damageHeroes, 5000)
+setInterval(drawAllHeroes, 5000)
