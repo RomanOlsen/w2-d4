@@ -17,3 +17,8 @@ body {
   font-size: 15rem;
   user-select: none;
 }
+
+.boss-bar {
+  min-height: 5dvh;
+  width: 100%;
+}

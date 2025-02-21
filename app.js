@@ -33,6 +33,7 @@ function attackBoss() {
     totalDamage += hero.damage
   })
   boss.health -= totalDamage
+  drawBossBar()
   checkBossHealth()
   console.log(boss.health)
 }
@@ -43,6 +44,7 @@ function checkBossHealth() {
     levelUpBoss()
     levelUpHeroes()
     drawBoss()
+    drawBossBar()
   }
 }
 
@@ -114,6 +116,10 @@ function drawAllHeroes() {
 
 }
 
+function drawBossBar() {
+  const bossBarElem = document.getElementById('bossBar')
+  bossBarElem.innerText = boss.health.toString()
+}
 
 
 // !SECTION 
